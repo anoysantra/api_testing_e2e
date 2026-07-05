@@ -1,0 +1,7 @@
+2026-07-05 15:11:15,311 - INFO - test_login passed
+2026-07-05 15:11:15,887 - INFO - test_get_employees passed
+2026-07-05 15:11:18,210 - INFO - test_login passed
+2026-07-05 15:11:19,235 - INFO - test_get_employees passed
+2026-07-05 15:11:21,913 - ERROR - test_login failed: Login failed: no token returned
+assert 'None' != 'None'
+2026-07-05 15:11:22,197 - ERROR - test_get_employees failed: status_code=401, error=Invalid token
