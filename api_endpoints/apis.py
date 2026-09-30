@@ -1,6 +1,6 @@
 import requests
 
-API_ENDPOINT = 'https://fastapi-endpoints-new.onrender.com/'
+API_ENDPOINT = 'https://fastapi-endpoints-new.onrender.com'
 #start the aiven MySQL(auto-off enabled) to generate the reports
 
 session = requests.Session()
