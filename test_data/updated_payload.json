@@ -1,7 +1,7 @@
 {
   "employee_id": "ETMP049",
   "name": "Mark Johnson",
-  "department": "Engineering",
+  "department": "Engineering-QA",
   "salary": 75000,
   "email": "mark.johnson.updated@example.com",
   "address": "123 Main St, Anytown, California, 12345"
