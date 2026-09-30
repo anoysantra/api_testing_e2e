@@ -2,9 +2,9 @@ name: API Testing CI Suite
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "codespace-reimagined-lamp-6x64wj65jqf4x6r" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "codespace-reimagined-lamp-6x64wj65jqf4x6r" ]
 
 jobs:
   test:
@@ -20,20 +20,17 @@ jobs:
         python-version: "3.10"
         cache: 'pip'
 
-    # Installs requests, pytest, and the HTML reporting engine
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    # Creates the reports folder and runs tests while outputting an HTML report
     - name: Run test suite and generate HTML report
       run: |
         mkdir -p reports
         pytest -q --html=reports/report.html --self-contained-html
-      continue-on-error: true # Ensures artifacts upload even if a test case fails
+      continue-on-error: true
 
-    # Uploads the generated reports folder straight to your GitHub Actions panel
     - name: Upload Generated Test Reports
       uses: actions/upload-artifact@v4
       with:
